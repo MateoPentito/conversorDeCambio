@@ -89,13 +89,14 @@ h1 {
     height: 100px;
     box-shadow: 0 3px 15px green;
 }
+
 .section-container_div_title_h2-p {
     padding: 20px;
     background-color: white;
     color: black;
 }
 
-.section-container-p{
+.section-container-p {
     padding: 20px;
 }
 
@@ -118,30 +119,31 @@ h1 {
     border-radius: 10px;
 }
 
-.section-container-div-div_form{
+.section-container-div-div_form {
     padding: 50px;
     color: black;
     font-size: 30px;
 }
 
-.section-container-div-div-form_div{
+.section-container-div-div-form_div {
     display: flex;
     color: black;
 }
 
-.section-container_input{
+.section-container_input {
     box-shadow: 0 3px 10px green;
     border-radius: 5px;
     height: 30px;
 }
 
-.section-container_button{
+.section-container_button {
     box-shadow: 0 3px 10px green;
     border-radius: 5px;
     height: 35px;
     width: 100px;
 }
-.section-container_button:hover{
+
+.section-container_button:hover {
     box-shadow: 0 3px 10px green;
     border-radius: 5px;
     background-color: green;
@@ -192,15 +194,16 @@ h1 {
 
 .section-container_div_title_img2 {
     height: 100px;
-    box-shadow: 0 3px 15px green;
+    box-shadow: 0 3px 15px yellow;
 }
+
 .section-container_div_title_h2-p2 {
     padding: 20px;
     background-color: white;
     color: black;
 }
 
-.section-container-p2{
+.section-container-p2 {
     padding: 20px;
 }
 
@@ -224,31 +227,31 @@ h1 {
     border-radius: 10px;
 }
 
-.section-container-div-div_form2{
+.section-container-div-div_form2 {
     padding: 50px;
     color: black;
     font-size: 30px;
 }
 
-.section-container-div-div-form_div2{
+.section-container-div-div-form_div2 {
     display: flex;
     color: black;
 }
 
-.section-container_input2{
+.section-container_input2 {
     box-shadow: 0 3px 10px green;
     border-radius: 5px;
     height: 30px;
 }
 
-.section-container_button2{
+.section-container_button2 {
     box-shadow: 0 3px 10px green;
     border-radius: 5px;
     height: 35px;
     width: 100px;
 }
 
-.section-container_button2:hover{
+.section-container_button2:hover {
     box-shadow: 0 3px 10px green;
     border-radius: 5px;
     background-color: green;
@@ -263,3 +266,46 @@ h1 {
 /*Section de moneda 2 */
 
 
+/********************************************************/
+
+/*Footer */
+
+.footer-ol {
+    background-color: rgb(214, 255, 190);
+    text-align: center;
+    text-decoration: none;
+    margin: auto;
+    display: flex;
+    padding: 20px;
+    list-style-type: none;
+    align-items: center;
+    box-shadow: 0 3px 15px black;
+    border-radius: 10px;
+}
+
+.footer-ol_li {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+}
+
+.footer-ol-li_a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    text-align: initial;
+
+}
+
+.footer-ol-li_img {
+    height: 30px;
+    width: 30px;
+}
+
+.footer-ol-li_img:hover {
+    height: 40px;
+    width: 40px;
+    transition: .4s;
+}
