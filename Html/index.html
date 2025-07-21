@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../styles/images/monedas.jpg">
     <link rel="stylesheet" href="../styles/style/styles.css">
+    <!--carga el script una vez que se carga toda la pagina-->    
+    <script src="../js/index.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+   
     <title>Conversor</title>
 </head>
 
@@ -16,11 +19,10 @@
     <header>
         <nav class="nav-container">
 
-            <img src="../styles/images/dolares.jpg" alt="logo" class="nav-container_img">
+            <a href="#index"><img src="../styles/images/dolares.jpg" alt="logo" class="nav-container_img"></a> 
 
             <ul class="nav-container_ul">
                 <li class="nav-container-ul_li"><a href="#index" class="nav-container-ul-li_a">Home</a></li>
-                <li class="nav-container-ul_li"><a href="#historial" class="nav-container-ul-li_a">Historial</a></li>
             </ul>
 
         </nav>
@@ -47,21 +49,22 @@
 
                 <div class="section-container-div_div">
                     <form class="section-container-div-div_form">
-                        <input type="radio" id="dolar" name="moneda" value="moneda">
-                        <label for="moneda">Dolar</label>
-                        <input type="radio" id="euro" name="moneda" value="moneda">
-                        <label for="moneda">Euro</label>
-                        <input type="radio" id="libra" name="moneda" value="moneda">
-                        <label for="moneda">Libra</label>
-                        <input type="radio" id="peso" name="moneda" value="moneda">
-                        <label for="moneda">Pesos</label>
+                        <input type="radio" id="monedaOriginal" name="moneda" value="dolar">
+                        <label for="dolar">Dolar</label>
+
+                        <input type="radio" id="monedaOriginal" name="moneda" value="euro">
+                        <label for="euro">Euro</label>
+
+                        <input type="radio" id="monedaOriginal" name="moneda" value="libra">
+                        <label for="libra">Libra</label>
+                        
+                        <input type="radio" id="monedaOriginal" name="moneda" value="peso">
+                        <label for="peso">Pesos</label>
                     </form>
 
                     <div class="section-container-div-div-form_div">
                         <p>Ingresa la cantidad a converir</p>
-                        <input type="number" class="section-container_input">
-
-
+                        <input type="number" class="section-container_input" id="cantidad-a-convertir">
                     </div>
 
 
@@ -86,15 +89,17 @@
 
                 <div class="section-container-div_div2">
                     <form class="section-container-div-div_form2">
+                        <input type="radio" id="monedaFinal" name="moneda" value="dolar">
+                        <label for="dolar">Dolar</label>
+
+                        <input type="radio" id="monedaFinal" name="moneda" value="euro">
+                        <label for="euro">Euro</label>
                         
-                        <input type="radio" id="dolar" name="moneda" value="moneda">
-                        <label for="moneda">Dolar</label>
-                        <input type="radio" id="euro" name="moneda" value="moneda">
-                        <label for="moneda">Euro</label>
-                        <input type="radio" id="libra" name="moneda" value="moneda">
-                        <label for="moneda">Libra</label>
-                        <input type="radio" id="peso" name="moneda" value="moneda">
-                        <label for="moneda">Pesos</label>
+                        <input type="radio" id="monedaFinal" name="moneda" value="libra">
+                        <label for="libra">Libra</label>
+                        
+                        <input type="radio" id="monedaFinal" name="moneda" value="peso">
+                        <label for="peso">Pesos</label>
                     </form>
 
                     <div class="section-container-div-div-form_div2">
@@ -102,7 +107,7 @@
                         <input type="number" class="section-container_input2">
 
                         <div>
-                            <button class="section-container_button2">Convertir</button>
+                            <button class="section-container_button2" id="button-convertir">Convertir</button>
                         </div>
 
                     </div>
@@ -115,22 +120,9 @@
             </div>
 
 
+            <button class="botonera" id="button-fondo">Cambiar de color el fondo</button>
 
-            <div class="section-container2_div">
-
-
-                <div>
-                    <h2>Vas a convertir</h2>
-                    <p>Felicidades</p>
-                </div>
-
-                <div>
-                    <h2>Resultado de la conversion</h2>
-                    <p>Felicidades</p>
-                </div>
-
-
-            </div>
+            
 
         </section>
     </main>

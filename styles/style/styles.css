@@ -3,10 +3,14 @@
     font-family: "Quicksand", sans-serif;
 }
 
+:root{
+    --sombreado-verde: 0 3px 15px green;
+    --sombreado-amarillo: 0 3px 15px yellow;
+    --sombreado-negro: 0 3px 15px black;
+}
+
 
 /*Barra de navegacion*/
-
-
 .nav-container_img {
     height: 30px;
     width: 30px;
@@ -72,7 +76,7 @@ h1 {
     padding: 30px;
     text-align: center;
     display: block;
-    box-shadow: 0 3px 15px black;
+    box-shadow:var(--sombreado-negro);
     background-color: white;
     width: 500px;
     border-radius: 10px;
@@ -87,7 +91,7 @@ h1 {
 
 .section-container_div_title_img {
     height: 100px;
-    box-shadow: 0 3px 15px green;
+    box-shadow: var(--sombreado-verde);
 }
 
 .section-container_div_title_h2-p {
@@ -113,7 +117,7 @@ h1 {
     padding: 30px;
     text-align: center;
     display: block;
-    box-shadow: 0 3px 15px black;
+    box-shadow: var(--sombreado-negro);
     background-color: white;
     width: 500px;
     border-radius: 10px;
@@ -131,20 +135,20 @@ h1 {
 }
 
 .section-container_input {
-    box-shadow: 0 3px 10px green;
+    box-shadow: var(--sombreado-verde);
     border-radius: 5px;
     height: 30px;
 }
 
 .section-container_button {
-    box-shadow: 0 3px 10px green;
+    box-shadow: var(--sombreado-verde);
     border-radius: 5px;
     height: 35px;
     width: 100px;
 }
 
 .section-container_button:hover {
-    box-shadow: 0 3px 10px green;
+    box-shadow: var(--sombreado-verde);
     border-radius: 5px;
     background-color: green;
     color: white;
@@ -179,7 +183,7 @@ h1 {
     padding: 30px;
     text-align: center;
     display: block;
-    box-shadow: 0 3px 15px black;
+    box-shadow: var(--sombreado-negro);
     background-color: white;
     width: 500px;
     border-radius: 10px;
@@ -194,7 +198,7 @@ h1 {
 
 .section-container_div_title_img2 {
     height: 100px;
-    box-shadow: 0 3px 15px yellow;
+    box-shadow:var(--sombreado-amarillo);
 }
 
 .section-container_div_title_h2-p2 {
@@ -221,7 +225,7 @@ h1 {
     padding: 30px;
     text-align: center;
     display: block;
-    box-shadow: 0 3px 15px black;
+    box-shadow: var(--sombreado-negro);
     background-color: white;
     width: 500px;
     border-radius: 10px;
@@ -239,23 +243,23 @@ h1 {
 }
 
 .section-container_input2 {
-    box-shadow: 0 3px 10px green;
+    box-shadow: var(--sombreado-verde);
     border-radius: 5px;
     height: 30px;
 }
 
 .section-container_button2 {
-    box-shadow: 0 3px 10px green;
+    box-shadow: var(--sombreado-verde);
     border-radius: 5px;
     height: 35px;
     width: 100px;
 }
 
 .section-container_button2:hover {
-    box-shadow: 0 3px 10px green;
+    box-shadow: var(--sombreado-negro);
     border-radius: 5px;
-    background-color: green;
-    color: white;
+    background-color:  rgb(239, 239, 11,.7);
+    color: black;
     transition: .6s;
     width: 100px;
 
@@ -271,7 +275,7 @@ h1 {
 /*Footer */
 
 .footer-ol {
-    background-color: rgb(214, 255, 190);
+    background-color: rgb(214, 255, 190, .6);
     text-align: center;
     text-decoration: none;
     margin: auto;
@@ -279,7 +283,7 @@ h1 {
     padding: 20px;
     list-style-type: none;
     align-items: center;
-    box-shadow: 0 3px 15px black;
+    box-shadow: var(--sombreado-negro);
     border-radius: 10px;
 }
 
